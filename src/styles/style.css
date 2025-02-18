@@ -4,9 +4,7 @@ body {
   height: 100%;
   max-width: 100%;
   font-family: "Poppins", serif;
-  ;
   overflow: hidden;
-
 }
 
 body::before {
@@ -17,9 +15,7 @@ body::before {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  /* Altere o valor de 0.3 para o nível de transparência desejado */
   z-index: -1;
-  /* Faz com que o pseudo-elemento fique atrás do conteúdo */
 }
 
 .header {
@@ -28,23 +24,18 @@ body::before {
   height: 120px;
   align-items: center;
   font-family: "Poppins", serif;
-
 }
-
-
 
 .header .img__logo img {
   width: 90px;
   padding: 20px;
   border-radius: 50%;
   transition: all 0.5s ease;
-  /* Transição suave */
 }
 
 .img__logo img:hover {
   filter: brightness(2.0);
   transform: scale(1.2)
-  /* Aumenta o brilho em 20% */
 }
 
 .header .header__busca {
@@ -58,20 +49,17 @@ body::before {
   gap: 20px;
 }
 
-
 .header .header__busca a {
   color: #FFF;
   text-decoration: none;
   padding: 20px 30px;
   font-size: 25px;
   font-weight: bold;
-
 }
 
 .header .header__busca ul li a:hover {
-  transition: 0.5 ease-in-out;
+  transition: 0.5s ease-in-out;
   color: #B8860B;
-
 }
 
 li:hover {
@@ -88,16 +76,11 @@ li:hover {
   background-image: url(../images/dragon.gif);
   font-size: 35px;
   width: 100%;
-  /* Ajusta o GIF ao tamanho do contêiner */
   background-size: cover;
-  /* Faz o GIF cobrir todo o elemento */
   background-position: center;
-  /* Centraliza o GIF */
   background-repeat: no-repeat;
-  /* Impede que o GIF se repita */
   font-family: "Poppins", serif;
 }
-
 
 .section__principal .section__descricao {
   display: flex;
@@ -112,7 +95,6 @@ li:hover {
   padding-top: 70px;
 }
 
-
 .section__descricao .descricao {
   font-family: "Poppins", serif;
   text-align: justify;
@@ -126,53 +108,36 @@ li:hover {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: bold;
-
 }
 
-/* FILMES */
-
-/* Centraliza o contêiner principal */
 .flimes {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  /* Faz com que a div ocupe toda a altura da tela */
   margin: 0;
   width: 100%;
 }
 
-/* Definir o layout de grid para as divs */
 .grid-container {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* 4 colunas */
   grid-template-rows: repeat(2, 1fr);
-  /* 2 linhas */
   gap: 20px;
-  /* Espaço entre os itens */
   width: 50%;
-  /* Ajusta a largura para 80% da tela */
   padding-bottom: 100px;
-
-
 }
 
-/* Estilo para cada item da grid */
 .grid-item {
   position: relative;
   background-color: black;
-  /* Cor de fundo inicial */
   border-radius: 5px;
-  /* Bordas arredondadas */
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 10px;
   overflow: hidden;
-  /* Para garantir que a imagem não ultrapasse a borda */
   transition: background-color 0.5s ease;
-  /* Transição do fundo */
 }
 
 .grid-item h3 {
@@ -180,17 +145,13 @@ li:hover {
   font-size: 10px;
 }
 
-
-/* Estilo para a imagem dentro da grid-item */
 .grid-item img {
   width: 100%;
   height: auto;
   border-radius: 5px;
   transition: opacity 0.5s ease;
-  /* Transição de opacidade da imagem */
 }
 
-/* Adiciona um pequeno efeito de hover para as imagens */
 .grid-item a {
   display: flex;
   transition: none;
@@ -201,7 +162,6 @@ li:hover {
   flex-direction: column;
   justify-content: center;
   margin: 10px;
-
 }
 
 .grid-item a:hover {
@@ -211,22 +171,16 @@ li:hover {
 
 .grid-item:hover {
   background-color: rgba(0, 0, 0, 0.5);
-  /* Cor de fundo escurece ao passar o mouse */
 }
 
-/* Ao passar o mouse, a imagem fica mais opaca */
 .grid-item:hover img {
   opacity: 0.7;
-  /* Diminui a opacidade da imagem */
 }
-
-/* PERSONAGENS */
 
 .cards {
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .card {
@@ -236,26 +190,20 @@ li:hover {
   padding: 0;
   margin: 0;
   height: 19.5rem;
-
 }
 
 .personagens {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  /* 4 colunas */
   grid-template-rows: repeat(2, 1fr);
-  /* 2 linhas */
   gap: 10px;
-  /* Espaço entre os itens */
 }
-
 
 .card img {
   width: 100%;
   height: 150px;
   border-radius: 5px;
   transition: opacity 0.5s ease;
-  /* Transição de opacidade da imagem */
 }
 
 .card .card-body {
@@ -271,14 +219,11 @@ li:hover {
 
 .card:hover {
   opacity: 0.7;
-  /* Diminui a opacidade da imagem */
   cursor: pointer;
-
 }
 
 .perh3 {
   text-align: center;
-
 }
 
 .form {
@@ -287,12 +232,12 @@ li:hover {
   height: 100%;
 }
 
-.form .divh1{
-display: flex;
-justify-content: center;
-align-items: center;
-
+.form .divh1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .centralizar {
   display: flex;
   justify-content: center;
@@ -314,19 +259,19 @@ align-items: center;
   display: flex;
   flex-direction: column;
   text-align: center;
-  justify-content: center; 
+  justify-content: center;
   padding: 20px;
   width: 400px;
   height: 400px;
 }
 
-label{
+label {
   color: #fff;
   background-color: #000;
   border-radius: 20px;
 }
 
-input{
+input {
   height: 30px;
   border: solid 2px #000;
   border-radius: 10px;
@@ -334,37 +279,98 @@ input{
 }
 
 .botao-harry-potter {
-  background-color: #7f3f00; /* Cor base inspirada no tom da casa Gryffindor */
-  color: #fff; /* Texto branco para contraste */
-  font-family: 'Georgia', serif; /* Fonte clássica, que remete ao estilo dos livros */
+  background-color: #7f3f00;
+  color: #fff;
+  font-family: 'Georgia', serif;
   padding: 12px 30px;
-  border-radius: 8px; /* Bordas arredondadas para um toque mais elegante */
+  border-radius: 8px;
   font-size: 16px;
   font-weight: bold;
-  text-transform: uppercase; /* Letras maiúsculas para um visual imponente */
-  border: 3px solid #ffcc00; /* Borda dourada, como o ouro usado nos brasões das casas */
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); /* Sombra para dar um efeito de profundidade */
+  text-transform: uppercase;
+  border: 3px solid #ffcc00;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
   cursor: pointer;
-  transition: all 0.3s ease; /* Efeito suave ao passar o mouse */
+  transition: all 0.3s ease;
 }
 
-/* Efeito quando o usuário passa o mouse sobre o botão */
 .botao-harry-potter:hover {
-  background-color: #ffcc00; /* Cor dourada quando passa o mouse */
-  color: #7f3f00; /* Texto em marrom quando passa o mouse */
-  border: 3px solid #7f3f00; /* Borda marrom para combinar com o texto */
-  transform: scale(1.1); /* Aumenta o botão ao passar o mouse, para um efeito dinâmico */
+  background-color: #ffcc00;
+  color: #7f3f00;
+  border: 3px solid #7f3f00;
+  transform: scale(1.1);
 }
 
-/* Efeito de foco */
 .botao-harry-potter:focus {
   outline: none;
-  box-shadow: 0 0 10px 2px rgba(255, 204, 0, 0.8); /* Efeito de brilho dourado ao clicar */
+  box-shadow: 0 0 10px 2px rgba(255, 204, 0, 0.8);
 }
 
-textarea{
+textarea {
   height: 100px;
   border: solid 2px #000;
   border-radius: 10px;
   padding: 8px;
+}
+
+/* Responsividade para dispositivos móveis */
+
+@media screen and (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+  }
+
+  .section__principal .section__descricao img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .section__descricao .descricao {
+    font-size: 16px;
+    padding-right: 10px;
+  }
+
+  .flimes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .personagens {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .form form {
+    width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+
+  .formH1 {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .grid-item {
+    padding: 5px;
+  }
+
+  .grid-item h3 {
+    font-size: 12px;
+  }
+
+  .botao-harry-potter {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  input, textarea {
+    width: 100%;
+    margin-bottom: 10px;
+  }
 }
