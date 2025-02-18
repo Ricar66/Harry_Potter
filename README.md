@@ -26,6 +26,9 @@ Nesta página, você pode deixar suas **opiniões** e **comentários** sobre o p
 
 O principal objetivo deste projeto é criar um site simples, porém envolvente, que explore o universo de **Harry Potter** com foco na navegação fácil e no design responsivo. 🌍💻
 
+![Demonstração do Projeto](harry_potter_project_demo.gif)
+
+
 ## 🚀 **Como Rodar o Projeto**:
 
 1. Clone o repositório:
@@ -33,7 +36,6 @@ O principal objetivo deste projeto é criar um site simples, porém envolvente, 
    git clone https://github.com/seu-usuario/nome-do-projeto.git
 
 
-   ![harry_potter_project_demo](https://github.com/user-attachments/assets/5ec52e8a-cdd6-4879-8450-eae109cf5c0b)
-   ![Demonstração do Projeto](C:/Downloads/harry_potter_project_demo.gif)
+ 
 
 
